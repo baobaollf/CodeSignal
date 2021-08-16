@@ -1,7 +1,9 @@
+package SpaceX;
+
 import java.util.HashMap;
 import java.util.Map;
 
-public class SpaceX {
+public class packetDescrambler {
     // CodeSignal Company Challenge #2
     String packetDescrambler(int[] seq, char[] fragmentData, int n) {
         Map<Integer, Map<Character, Integer>> map = new HashMap<>();
@@ -52,9 +54,9 @@ public class SpaceX {
 
 
     public static void main(String[] args) {
-        SpaceX spaceX = new SpaceX();
+        packetDescrambler packetDescrambler = new packetDescrambler();
         int[] seq = new int[]{1, 1, 0, 0, 0, 2, 2, 2};
         char[] fragmentData = new char[]{'+', '+', 'A', 'A', 'B', '#', '#', '#'};
-        System.out.println(spaceX.packetDescrambler(seq, fragmentData, 3));
+        System.out.println(packetDescrambler.packetDescrambler(seq, fragmentData, 3));
     }
 }
