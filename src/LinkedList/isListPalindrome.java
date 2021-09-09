@@ -55,4 +55,5 @@ public class isListPalindrome {
         }
         return slow;
     }
+
 }
